@@ -1,8 +1,8 @@
 # init.pp
 
 class timezone (
-  $timezone = $timezone::params::timezone,
-  $config_file = $timezone::params::config_file,
+  $timezone     = $timezone::params::timezone,
+  $config_file  = $timezone::params::config_file,
   $zoneinfo_dir = $timezone::params::zoneinfo_dir
 ) inherits timezone::params {
 
