@@ -14,4 +14,7 @@ class timezone (
     ensure  => 'link',
     target  => "${zoneinfo_dir}${timezone}"
   }
+  file { '/etc/timezone':
+    content => "${timezone}\n",
+  }
 }
